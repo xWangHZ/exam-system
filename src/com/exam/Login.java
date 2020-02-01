@@ -1,96 +1,163 @@
 package com.exam;
 
-import javafx.scene.control.PasswordField;
+import org.jb2011.lnf.beautyeye.ch3_button.BEButtonUI;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 public class Login extends JFrame{
 
-    private JTextField user;//用户名框
-    private JTextField pass;//密码框
+    private final Font font = new Font("华文行楷",Font.PLAIN,30);//字体
+    private final Font passfont = new Font("华文行楷",Font.PLAIN,20);//密码字体
+    private final ImageIcon title = new ImageIcon("Img/title.jpg");//背景图片
+    private final Backgroundpanel img = new Backgroundpanel(title.getImage());
 
-    private JPanel userpanel;//放置用户名
-    private JPanel passpanel;//放置密码
-    private JPanel userpass;//用户名和密码
+    private JTextField user;//用户名
+    private JTextField pass;//密码
 
-    private final Font font = new Font("华文行楷",Font.PLAIN,20);
+
+    private JButton login;//登录
+    private JButton exit;//退出
 
     public Login(){
+
+        this.setTitle("登陆系统");
         this.setSize(new Dimension(800,600));
-        this.setTitle("考试系统");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setLayout(null);
         this.setLocationRelativeTo(null);//使窗口在中央显示
-        this.setLayout(new BorderLayout());
-        paneladd();
-        this.add(userpass,BorderLayout.CENTER);
+        textadd();
+        buttonadd();
+        imgadd();
+        /**
+         * 登录
+         */
+        login.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                judge(user.getText(),pass.getText());
+            }
+        });
+        /**
+         * 退出
+         */
+        exit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+
+        /**
+         * 回车登录
+         */
+        user.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if(e.getKeyCode()==KeyEvent.VK_ENTER){
+                    judge(user.getText(),pass.getText());
+                }
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+
+            }
+        });
+        /**
+         * 回车登录
+         */
+        pass.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if(e.getKeyCode()==KeyEvent.VK_ENTER){
+                    judge(user.getText(),pass.getText());
+                }
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+
+            }
+        });
+
         this.setVisible(true);
     }
 
     /**
-     * 添加框到Jpaenl上
+     * 添加用户名和密码框
      */
-    public void paneladd(){
-        user = new JTextField("用户名",30);
-        pass = new JTextField("密码",30);
-        user.setForeground(Color.GRAY);
-        pass.setForeground(Color.GRAY);
-        passpanel = new JPanel();
-        userpanel = new JPanel();
-        userpass  = new JPanel();
-
-        user.addFocusListener(new FocusListener() {
-            @Override
-            public void focusGained(FocusEvent e) {
-                if(user.getText().trim().equals("用户名")){
-                    user.setForeground(Color.BLACK);
-                    user.setText("");
-                }
-            }
-
-            @Override
-            public void focusLost(FocusEvent e) {
-                if (user.getText().trim().equals("")) {
-                    user.setForeground(Color.GRAY);
-                    user.setText("用户名");
-                }
-            }
-        });
-
-        pass.addFocusListener(new FocusListener() {
-            @Override
-            public void focusGained(FocusEvent e) {
-                if(pass.getText().trim().equals("密码")){
-                    pass.setText("");
-                    pass.setForeground(Color.BLACK);
-                    System.out.println(pass.getClass());
-                }
-            }
-
-            @Override
-            public void focusLost(FocusEvent e) {
-                if (pass.getText().trim().equals("")) {
-                    pass.setText("密码");
-                    pass.setForeground(Color.GRAY);
-                    System.out.println(pass.getClass());
-                }
-            }
-        });
-
-
-        passpanel.add(user);
-        userpanel.add(pass);
+    public void textadd(){
+        user = new JTextField(20);
+        pass = new JPasswordField(20);
 
         user.setFont(font);
-        pass.setFont(font);
-        userpass.setLayout(new FlowLayout(FlowLayout.CENTER,800,0));
-        userpass.add(passpanel);
-        userpass.add(userpanel);
+        pass.setFont(passfont);
+
+        user.setBounds(180, 100, 400,40);
+        pass.setBounds(180, 150, 400,40);
+
+        this.add(user);
+        this.add(pass);
     }
 
+    /**
+     * 添加背景图
+     */
+    public void imgadd(){
+        img.setBounds(0,-10,800,600);
+        this.add(img);
+    }
 
+    /**
+     *登录按钮
+     */
+     public void buttonadd(){
+         login = new JButton("登录");
+         exit  = new JButton("退出");
 
+         login.setFont(font);
+         exit.setFont(font);
+
+         login.setBounds(190,400,160,70);
+         exit.setBounds(420,400,160,70);
+
+         login.setUI(new BEButtonUI().setNormalColor(BEButtonUI.NormalColor.green));//设置按钮样式绿色
+         exit.setUI(new BEButtonUI().setNormalColor(BEButtonUI.NormalColor.red));//设置按钮样式红色
+
+         this.add(login);
+         this.add(exit);
+     }
+
+    /**
+     * 登录验证
+     */
+    public void judge(String user, String pass){
+        if(user.equals("root")){
+            if(pass.equals("root")){
+                JOptionPane.showMessageDialog(null,"登录成功", "我是一个提示框", JOptionPane.PLAIN_MESSAGE);
+                this.setVisible(false);
+            }
+            else{
+                JOptionPane.showMessageDialog(null,"密码错误", "我是一个提示框", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+        else{
+            JOptionPane.showMessageDialog(null,"用户不存在", "我是一个提示框", JOptionPane.ERROR_MESSAGE);
+        }
+    }
 
 }
