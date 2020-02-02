@@ -189,10 +189,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="902" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1580661474477" />
-    <state x="386" y="5" key="CommitChangelistDialog2" timestamp="1580574394590">
+    <state x="386" y="5" key="CommitChangelistDialog2" timestamp="1580662719649">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="386" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580574394590" />
+    <state x="386" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580662719649" />
     <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1579316351207">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -237,10 +237,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580574408604" />
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1580653394915">
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1580662685809">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580653394915" />
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580662685809" />
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580662692362">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1580662692362" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1580216514120">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
