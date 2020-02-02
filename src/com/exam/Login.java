@@ -150,6 +150,7 @@ public class Login extends JFrame{
             if(pass.equals("root")){
                 JOptionPane.showMessageDialog(null,"登录成功", "我是一个提示框", JOptionPane.PLAIN_MESSAGE);
                 this.setVisible(false);
+                new TopicPanel(user);
             }
             else{
                 JOptionPane.showMessageDialog(null,"密码错误", "我是一个提示框", JOptionPane.ERROR_MESSAGE);

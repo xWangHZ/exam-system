@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4ab7da6-a41e-44a0-a4d2-56316364b294" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/Img/title.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/exam/Backgroundpanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/IMGTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/JFrameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Img/topic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/exam/TopicPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/file/GetProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/file/GetProblemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/test/ButtonGroupTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/test/BackgroundPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/test/BackgroundPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/test/IMGTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/test/IMGTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/exam/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exam/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/exam/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exam/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/exam/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/test/IMGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/IMGTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +37,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="OverrideImplement.combined" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -55,10 +57,37 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\学习\GitHub\exam-system\Img" />
       <recent name="E:\学习使我快乐\GitHub\exam-system\Img" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
+    <configuration name="ButtonGroupTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.ButtonGroupTest" />
+      <module name="exam-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetProblemTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.file.GetProblemTest" />
+      <module name="exam-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IMGTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.IMGTest" />
       <module name="exam-system" />
@@ -86,11 +115,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.exam.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.main.Main" />
       <module name="exam-system" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.exam.*" />
+          <option name="PATTERN" value="com.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,6 +130,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.GetProblemTest" />
+        <item itemvalue="Application.ButtonGroupTest" />
         <item itemvalue="Application.IMGTest" />
         <item itemvalue="Application.JFrameTest" />
       </list>
@@ -133,18 +164,31 @@
       <workItem from="1580204222587" duration="8327000" />
       <workItem from="1580283790619" duration="3411000" />
       <workItem from="1580474991940" duration="2565000" />
-      <workItem from="1580564256457" duration="7835000" />
+      <workItem from="1580564256457" duration="8364000" />
+      <workItem from="1580653394879" duration="8799000" />
     </task>
+    <task id="LOCAL-00001" summary="登陆界面基本完成(密码写在程序中)">
+      <created>1580574396305</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580574396305</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="登陆界面基本完成(密码写在程序中)" />
+    <option name="LAST_COMMIT_MESSAGE" value="登陆界面基本完成(密码写在程序中)" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1580571660349">
+    <state x="902" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1580661474477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1580571660349" />
+    <state x="902" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1580661474477" />
     <state x="386" y="5" key="CommitChangelistDialog2" timestamp="1580574394590">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -153,38 +197,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579316351207" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1580574248419">
+    <state width="1493" height="224" key="GridCell.Tab.0.bottom" timestamp="1580662515313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580574248419" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1580574248419">
+    <state width="1493" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580662515313" />
+    <state width="1493" height="224" key="GridCell.Tab.0.center" timestamp="1580662515313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580574248419" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1580574248419">
+    <state width="1493" height="224" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580662515313" />
+    <state width="1493" height="224" key="GridCell.Tab.0.left" timestamp="1580662515313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580574248419" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1580574248419">
+    <state width="1493" height="224" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580662515313" />
+    <state width="1493" height="224" key="GridCell.Tab.0.right" timestamp="1580662515313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580574248419" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1580565609492">
+    <state width="1493" height="224" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580662515313" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1580574774014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580565609492" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1580565609492">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580574774014" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1580574774013">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1580565609492" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1580565609492">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1580574774013" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1580574774013">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1580565609492" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1580565609492">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1580574774013" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1580574774014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1580565609492" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1580574774014" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1579316354173">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -193,10 +237,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580574408604" />
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1580564917137">
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1580653394915">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580564917137" />
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580653394915" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1580216514120">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -1,5 +1,6 @@
-package com.exam;
+package com.main;
 
+import com.exam.Login;
 import org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper;
 
 import javax.swing.*;
