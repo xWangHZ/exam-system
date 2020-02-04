@@ -6,7 +6,7 @@ public class GetProblemTest {
 
 
     public GetProblemTest(){
-        GetProblem test = new GetProblem(1);
+        ObtainProblem test = new ObtainProblem(1);
         options = new String[4];
 
         problems = test.getProblems();

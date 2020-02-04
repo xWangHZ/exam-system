@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class GetProblem {
+public class ObtainProblem {
 
     private final int length = 4;
 
@@ -16,9 +16,16 @@ public class GetProblem {
 
     private String[] options = new String[length];//选项
 
-    public GetProblem(){}
+    private int len = 0;
 
-    public GetProblem(int len){
+    public ObtainProblem(){}
+
+    public ObtainProblem(int len){
+        this.len = len;
+        problem();
+    }
+
+    public void problem(){
         this.url = "problem/"+len+".txt";
         try {
             output = new BufferedReader(new FileReader(url));
@@ -37,6 +44,10 @@ public class GetProblem {
                 e.printStackTrace();
             }
         }
+    }
+
+    public void setLen(int len){
+        this.len = len;
     }
 
     public String getProblems() {
