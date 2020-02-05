@@ -1,5 +1,7 @@
 package com.file;
 
+import com.data.Data;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -7,7 +9,8 @@ import java.io.IOException;
 
 public class ObtainProblem {
 
-    private final int length = 4;
+    private final Data data = new Data();
+    private final int length = data.getLength();
 
     private BufferedReader output;//读文件
 

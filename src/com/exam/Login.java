@@ -13,7 +13,7 @@ public class Login extends JFrame{
 
     private final Font font = new Font("华文行楷",Font.PLAIN,30);//字体
     private final Font passfont = new Font("华文行楷",Font.PLAIN,20);//密码字体
-    private final ImageIcon title = new ImageIcon("Img/title.jpg");//背景图片
+    private final ImageIcon title = new ImageIcon("img/title.jpg");//背景图片
     private final Backgroundpanel img = new Backgroundpanel(title.getImage());
 
     private JTextField user;//用户名

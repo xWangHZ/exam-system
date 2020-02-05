@@ -1,4 +1,6 @@
-package com.file;
+package com.test;
+
+import com.file.ObtainProblem;
 
 public class GetProblemTest {
     private String problems;//问题

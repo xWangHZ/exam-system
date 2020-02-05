@@ -1,5 +1,7 @@
 package com.exam;
 
+import com.data.Data;
+import com.file.CompareAnswer;
 import com.file.ObtainProblem;
 import org.jb2011.lnf.beautyeye.ch3_button.BEButtonUI;
 
@@ -10,13 +12,16 @@ import java.awt.event.ActionListener;
 
 public class TopicPanel extends JFrame{
 
-    private final int length = 4;//选项数量
+    private final Data data = new Data();
+
+    private final int length = data.getLength();//选项数量
     private final Font font = new Font("宋体",Font.PLAIN,30);//字体
     private final JRadioButton[] option = new JRadioButton[length];//选项数组
-    private final ImageIcon title = new ImageIcon("Img/topic.jpg");//背景图片
+    private final ImageIcon title = new ImageIcon("img/topic.jpg");//背景图片
     private final Backgroundpanel img = new Backgroundpanel(title.getImage());//画出背景图片
 
     private JLabel problem;//问题
+    private JLabel fractionlabel;//存放分数
 
     private ButtonGroup optiongroup;//选项按钮组
 
@@ -26,11 +31,12 @@ public class TopicPanel extends JFrame{
     private JButton next;//下一题
     private JButton ends;//交卷按钮
 
-    private int size = 2;//题目总共数量
+    private int size = data.getSize();//题目总共数量
     private int now = 1;//现在处在的题目
-    private int i = 0;//赋值时的选项序号
+    private int fraction;//分数
 
     private ObtainProblem obtainProblem = new ObtainProblem(now);//获取题目与选项类
+    private CompareAnswer compareAnswer;//判题类
 
     private String problems;//问题
 
@@ -79,7 +85,7 @@ public class TopicPanel extends JFrame{
 
         options = obtainProblem.getOptions();
 
-        for(i= 0;i<length;i++){
+        for(int i= 0;i<length;i++){
             option[i] = new JRadioButton(options[i]);
             option[i].setFont(font);
             option[i].setOpaque(false);//设置透明
@@ -87,9 +93,12 @@ public class TopicPanel extends JFrame{
             option[i].addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    System.out.println(now-1);
-                    System.out.println(i);
-                    answer[now-1] = Integer.parseInt(option[i].getName());//将答案保存进数组
+                    for(int i=0;i<length;i++){
+                        if(option[i].isSelected()){
+                            answer[now-1] = i+1;//将选中的答案放入数组中
+                            break;
+                        }
+                    }
                 }
             });
             optiongroup.add(option[i]);
@@ -105,16 +114,24 @@ public class TopicPanel extends JFrame{
         last = new JButton("上一题");
         next = new JButton("下一题");
         ends = new JButton("交卷");
+        fractionlabel = new JLabel();
+
+        fractionlabel.setVisible(false);
+        fractionlabel.setOpaque(false);
+
 
         ends.setUI(new BEButtonUI().setNormalColor(BEButtonUI.NormalColor.red));
 
         last.setFont(font);
         next.setFont(font);
         ends.setFont(font);
+        fractionlabel.setFont(font);
 
         last.setBounds(200, 800, 200,50);
         next.setBounds(824, 800, 200,50);
         ends.setBounds(1000,50,  200,50);
+        fractionlabel.setBounds(550,400,300,100);
+
 
 
         //点击上一题
@@ -126,7 +143,7 @@ public class TopicPanel extends JFrame{
                             "已经没有了呢",
                             "我是系统提醒",
                             JOptionPane.ERROR_MESSAGE,
-                            new ImageIcon("Img/stop.png"));
+                            new ImageIcon("img/stop.png"));
                 }
                 else{
                     now--;
@@ -151,7 +168,7 @@ public class TopicPanel extends JFrame{
                             "已经没有了呢",
                             "我是系统提醒",
                             JOptionPane.ERROR_MESSAGE,
-                            new ImageIcon("Img/stop.png"));
+                            new ImageIcon("img/stop.png"));
                 }
                 else{
                     now++;
@@ -184,14 +201,25 @@ public class TopicPanel extends JFrame{
                             "你确定交卷嘛？",
                             "我是系统提醒",
                             JOptionPane.ERROR_MESSAGE,
-                            new ImageIcon("Img/stop.png"));
+                            new ImageIcon("img/stop.png"));
+                    compareAnswer = new CompareAnswer(answer);
+                    ends.setVisible(false);
+                    next.setVisible(false);
+                    last.setVisible(false);
+                    problem.setVisible(false);
+                    for(int i = 0;i<length;i++){
+                        option[i].setVisible(false);
+                    }
+                    fraction = compareAnswer.getFraction();//获取分数
+                    fractionlabel.setText(user+"的分数是"+fraction+"");//写分数
+                    fractionlabel.setVisible(true);//显示分数
                 }
                 else{
                     JOptionPane.showMessageDialog(null,
                             "还有题目没有作答",
                             "我是系统提醒",
                             JOptionPane.ERROR_MESSAGE,
-                            new ImageIcon("Img/noend.jpg"));
+                            new ImageIcon("img/noend.jpg"));
                 }
             }
         });
@@ -199,6 +227,7 @@ public class TopicPanel extends JFrame{
         this.add(last);
         this.add(next);
         this.add(ends);
+        this.add(fractionlabel);
     }
 
     /**

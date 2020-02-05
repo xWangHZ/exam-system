@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4ab7da6-a41e-44a0-a4d2-56316364b294" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/Img/noend.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Img/stop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraction/fraction.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/data/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/file/CompareAnswer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/noend.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/noend.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/stop.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/stop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/title.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/title.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/topic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/topic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/file/GetProblem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/file/GetProblemTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/file/GetProblemTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/file/GetProblemTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/file/ObtainProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/file/ObtainProblem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/exam/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exam/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/exam/TopicPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exam/TopicPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/file/GetProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/file/ObtainProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/file/GetProblemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/file/GetProblemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/file/GetProblemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/GetProblemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/file/ObtainProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/file/ObtainProblem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +84,11 @@
       </method>
     </configuration>
     <configuration name="GetProblemTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.file.GetProblemTest" />
+      <option name="MAIN_CLASS_NAME" value="com.test.GetProblemTest" />
       <module name="exam-system" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.file.*" />
+          <option name="PATTERN" value="com.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,6 +177,7 @@
       <workItem from="1580662685471" duration="87000" />
       <workItem from="1580735877143" duration="1712000" />
       <workItem from="1580829481522" duration="4238000" />
+      <workItem from="1580914966620" duration="4561000" />
     </task>
     <task id="LOCAL-00001" summary="登陆界面基本完成(密码写在程序中)">
       <created>1580574396305</created>
@@ -193,10 +205,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="答题界面基本完成" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="902" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1580833327688">
+    <state x="606" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580916956617">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="902" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1580833327688" />
+    <state x="606" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1580916956617" />
+    <state x="902" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1580917532762">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="902" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1580917532762" />
     <state x="493" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580831767374">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -209,22 +225,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579316351207" />
-    <state width="1493" height="224" key="GridCell.Tab.0.bottom" timestamp="1580834069390">
+    <state width="1493" height="224" key="GridCell.Tab.0.bottom" timestamp="1580919824080">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580834069390" />
-    <state width="1493" height="224" key="GridCell.Tab.0.center" timestamp="1580834069390">
+    <state width="1493" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580919824080" />
+    <state width="1493" height="224" key="GridCell.Tab.0.center" timestamp="1580919824080">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580834069390" />
-    <state width="1493" height="224" key="GridCell.Tab.0.left" timestamp="1580834069390">
+    <state width="1493" height="224" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580919824080" />
+    <state width="1493" height="224" key="GridCell.Tab.0.left" timestamp="1580919824080">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580834069390" />
-    <state width="1493" height="224" key="GridCell.Tab.0.right" timestamp="1580834069390">
+    <state width="1493" height="224" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580919824080" />
+    <state width="1493" height="224" key="GridCell.Tab.0.right" timestamp="1580919824080">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580834069390" />
+    <state width="1493" height="224" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580919824080" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1580574774014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -249,17 +265,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580662728973" />
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1580829502422">
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1580914966950">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580829502422" />
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580914966950" />
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580662692362">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1580662692362" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1580216514120">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1580917172699">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1580216514120" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1580917172699" />
   </component>
 </project>
