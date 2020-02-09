@@ -2,26 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4ab7da6-a41e-44a0-a4d2-56316364b294" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/fraction/fraction.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/data/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/file/CompareAnswer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/topicmake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/exam/teacher/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/exam/teacher/TopicMake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/main/TeacherMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/noend.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/noend.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/stop.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/stop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/title.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/title.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/topic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/topic.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/file/GetProblemTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/topic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/topicpanel.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/data/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/Backgroundpanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/TopicPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/file/CompareAnswer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/file/CompareAnswer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/file/ObtainProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/file/ObtainProblem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/exam/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exam/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/exam/TopicPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exam/TopicPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/file/GetProblemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/GetProblemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tool/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/exam/Backgroundpanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tool/Backgroundpanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/exam/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exam/student/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/exam/TopicPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exam/student/TopicReply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/file/CompareAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/file/CompareAnswer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/file/ObtainProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/file/ObtainProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/main/studentMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,12 +72,15 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\学习\GitHub\exam-system\img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\学习\GitHub\exam-system\Img" />
       <recent name="E:\学习使我快乐\GitHub\exam-system\Img" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.studentMain">
     <configuration name="ButtonGroupTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.ButtonGroupTest" />
       <module name="exam-system" />
@@ -122,8 +133,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.main.Main" />
+    <configuration name="studentMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.main.studentMain" />
       <module name="exam-system" />
       <extension name="coverage">
         <pattern>
@@ -137,7 +148,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.studentMain" />
         <item itemvalue="Application.GetProblemTest" />
         <item itemvalue="Application.ButtonGroupTest" />
         <item itemvalue="Application.IMGTest" />
@@ -178,6 +189,9 @@
       <workItem from="1580735877143" duration="1712000" />
       <workItem from="1580829481522" duration="4238000" />
       <workItem from="1580914966620" duration="4561000" />
+      <workItem from="1581158406944" duration="597000" />
+      <workItem from="1581174859311" duration="1389000" />
+      <workItem from="1581259353603" duration="1068000" />
     </task>
     <task id="LOCAL-00001" summary="登陆界面基本完成(密码写在程序中)">
       <created>1580574396305</created>
@@ -225,22 +239,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579316351207" />
-    <state width="1493" height="224" key="GridCell.Tab.0.bottom" timestamp="1580919824080">
+    <state width="1493" height="225" key="GridCell.Tab.0.bottom" timestamp="1581260456320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580919824080" />
-    <state width="1493" height="224" key="GridCell.Tab.0.center" timestamp="1580919824080">
+    <state width="1493" height="225" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581260456320" />
+    <state width="1493" height="225" key="GridCell.Tab.0.center" timestamp="1581260456320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580919824080" />
-    <state width="1493" height="224" key="GridCell.Tab.0.left" timestamp="1580919824080">
+    <state width="1493" height="225" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581260456320" />
+    <state width="1493" height="225" key="GridCell.Tab.0.left" timestamp="1581260456320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580919824080" />
-    <state width="1493" height="224" key="GridCell.Tab.0.right" timestamp="1580919824080">
+    <state width="1493" height="225" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581260456320" />
+    <state width="1493" height="225" key="GridCell.Tab.0.right" timestamp="1581260456320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580919824080" />
+    <state width="1493" height="225" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581260456320" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1580574774014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -265,10 +279,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580662728973" />
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1580914966950">
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1581259352363">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580914966950" />
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581259352363" />
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580662692362">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

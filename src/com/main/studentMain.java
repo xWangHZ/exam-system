@@ -1,11 +1,11 @@
 package com.main;
 
-import com.exam.Login;
+import com.exam.student.Login;
 import org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper;
 
 import javax.swing.*;
 
-public class Main {
+public class studentMain {
     public static void main(String[] args) {
         BeautyEyeLNFHelper.frameBorderStyle = BeautyEyeLNFHelper.FrameBorderStyle.translucencyAppleLike;//普通不透明
         try

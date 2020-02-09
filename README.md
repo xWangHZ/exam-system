@@ -12,24 +12,24 @@
 
 ## 目录
 
-```
-.
-├── src
-│   ├── com
-|		├── data						//存放数据的包
-|			├── Data.java				//存放常用数值类
-|		├── exam						//存放考试系统界面的包
-|			├── Backgroundpanel.java	//绘制背景图片类
-|			├── Login.java				//登陆界面类
-|			├── TopicPanel.java			//学生答题界面类
-|		├── file						//存放对文件操作的包
-|			├── ObtainProblem.java		//从文件中得到选项和问题的类
-|			├── CompareAnswer.java		//从文件中得到答案并比较的类
-|		├── main						//存放主类的包
-|			├── Main.java				//主类
-├── img									//图片
-├── problem								//问题和选项
-├── answer								//正确答案
-├── fraction							//每道题的分值
-```
+>|—— src			
+>|	|—— com	
+>|		|——	tool						//存放工具类的包
+>|			|——	Data.java				//题目数量等数据类
+>|			|——	Backgroundpanel.java	//添加背景图片类
+>|		|——	exam						//存放考试系统类的包
+>|			|——	teacher					//存放教师系统类的包
+>|			|—— student					//存放学生系统类的包
+>|				|——	Login.java			//登陆界面类
+>|				|——	TopicReply.java		//答题界面类
+>|		|——	file						//存放文件操作类的包
+>|			|——	ObtainProblem.java		//从文件中读取选项和问题类
+>|			|——	CompareAnswer.java		//从文件中读取答案并返回分数类
+>|		|——	main						//存放入口类的包
+>|			|——	TeacherMain.java		//教师端主类
+>|			|——	studentMain.java		//学生端主类
+>|——	img									//存放图片
+>|——	fraction							//存放分值
+>|——	problem								//存放问题
+>|——	answer								//存放答案
 

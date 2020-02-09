@@ -1,6 +1,7 @@
-package com.exam;
+package com.exam.student;
 
-import com.data.Data;
+import com.tool.Backgroundpanel;
+import com.tool.Data;
 import com.file.CompareAnswer;
 import com.file.ObtainProblem;
 import org.jb2011.lnf.beautyeye.ch3_button.BEButtonUI;
@@ -10,15 +11,15 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class TopicPanel extends JFrame{
+public class TopicReply extends JFrame{
 
     private final Data data = new Data();
 
     private final int length = data.getLength();//选项数量
     private final Font font = new Font("宋体",Font.PLAIN,30);//字体
     private final JRadioButton[] option = new JRadioButton[length];//选项数组
-    private final ImageIcon title = new ImageIcon("img/topic.jpg");//背景图片
-    private final Backgroundpanel img = new Backgroundpanel(title.getImage());//画出背景图片
+    private final ImageIcon title = new ImageIcon("img/topicpanel.jpg");//背景图片
+    private final Backgroundpanel img = new Backgroundpanel(title.getImage(),this);//画出背景图片
 
     private JLabel problem;//问题
     private JLabel fractionlabel;//存放分数
@@ -44,9 +45,9 @@ public class TopicPanel extends JFrame{
 
     private int[] answer = new int[length];//存放每道题的答案
 
-    public TopicPanel(){}
+    public TopicReply(){}
 
-    public TopicPanel(String user){
+    public TopicReply(String user){
         this.user = user;
         this.setTitle(user+"的考试窗口");
         this.setSize(new Dimension(1280,1024));
@@ -56,7 +57,7 @@ public class TopicPanel extends JFrame{
         problemlabeladd();//添加问题
         JRadioButtonadd();//添加单选按钮
         buttonadd();//添加上下题按钮
-        imgadd();//添加背景图片
+        img.imgadd(0,0,1280,1024);//添加图片
         this.setVisible(true);
     }
 
@@ -228,13 +229,5 @@ public class TopicPanel extends JFrame{
         this.add(next);
         this.add(ends);
         this.add(fractionlabel);
-    }
-
-    /**
-     * 添加背景图片
-     */
-    public void imgadd(){
-        img.setBounds(0,0,1280,1024);
-        this.add(img);
     }
 }

@@ -1,4 +1,4 @@
-package com.data;
+package com.tool;
 
 public class Data {
 
