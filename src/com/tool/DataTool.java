@@ -1,6 +1,6 @@
 package com.tool;
 
-public class Data {
+public class DataTool {
 
     private int length = 4;
     private int size = 2;
@@ -21,5 +21,5 @@ public class Data {
         this.size = size;
     }
 
-    public Data(){};
+    public DataTool(){};
 }

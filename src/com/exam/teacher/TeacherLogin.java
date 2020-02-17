@@ -1,6 +1,7 @@
-package com.exam.student;
+package com.exam.teacher;
 
 import com.tool.Backgroundpanel;
+import com.tool.LinkMySQLTool;
 import org.jb2011.lnf.beautyeye.ch3_button.BEButtonUI;
 
 import javax.swing.*;
@@ -10,12 +11,13 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class Login extends JFrame{
+public class TeacherLogin extends JFrame{
 
     private final Font font = new Font("华文行楷",Font.PLAIN,30);//字体
     private final Font passfont = new Font("华文行楷",Font.PLAIN,20);//密码字体
     private final ImageIcon title = new ImageIcon("img/title.jpg");//背景图片
-    private final Backgroundpanel img = new Backgroundpanel(title.getImage(),this);
+    private final Backgroundpanel img = new Backgroundpanel(title.getImage(),this);//添加图片类
+    private final LinkMySQLTool linkMySQLTool = new LinkMySQLTool();//连接数据库
 
     private JTextField user;//用户名
     private JTextField pass;//密码
@@ -24,7 +26,7 @@ public class Login extends JFrame{
     private JButton login;//登录
     private JButton exit;//退出
 
-    public Login(){
+    public TeacherLogin(){
 
         this.setTitle("登陆系统");
         this.setSize(new Dimension(800,600));
@@ -126,40 +128,45 @@ public class Login extends JFrame{
     /**
      *登录按钮
      */
-     public void buttonadd(){
-         login = new JButton("登录");
-         exit  = new JButton("退出");
+    public void buttonadd(){
+        login = new JButton("登录");
+        exit  = new JButton("退出");
 
-         login.setFont(font);
-         exit.setFont(font);
+        login.setFont(font);
+        exit.setFont(font);
 
-         login.setBounds(190,400,160,70);
-         exit.setBounds(420,400,160,70);
+        login.setBounds(190,400,160,70);
+        exit.setBounds(420,400,160,70);
 
-         login.setUI(new BEButtonUI().setNormalColor(BEButtonUI.NormalColor.green));//设置按钮样式绿色
-         exit.setUI(new BEButtonUI().setNormalColor(BEButtonUI.NormalColor.red));//设置按钮样式红色
+        login.setUI(new BEButtonUI().setNormalColor(BEButtonUI.NormalColor.green));//设置按钮样式绿色
+        exit.setUI(new BEButtonUI().setNormalColor(BEButtonUI.NormalColor.red));//设置按钮样式红色
 
-         this.add(login);
-         this.add(exit);
-     }
+        this.add(login);
+        this.add(exit);
+    }
 
     /**
      * 登录验证
      */
     public void judge(String user, String pass){
-        if(user.equals("root")){
-            if(pass.equals("root")){
+
+        int flag = linkMySQLTool.Login(user,pass);
+
+        switch(flag){
+            case 1:{
                 JOptionPane.showMessageDialog(null,"登录成功", "我是一个提示框", JOptionPane.PLAIN_MESSAGE);
                 this.setVisible(false);
-                new TopicReply(user);
+                new TopicMake(linkMySQLTool.getStudent_name());
+                break;
             }
-            else{
+            case 2:{
                 JOptionPane.showMessageDialog(null,"密码错误", "我是一个提示框", JOptionPane.ERROR_MESSAGE);
+                break;
             }
-        }
-        else{
-            JOptionPane.showMessageDialog(null,"用户不存在", "我是一个提示框", JOptionPane.ERROR_MESSAGE);
+            case 0:{
+                JOptionPane.showMessageDialog(null,"用户不存在", "我是一个提示框", JOptionPane.ERROR_MESSAGE);
+                break;
+            }
         }
     }
-
 }

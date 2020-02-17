@@ -1,7 +1,7 @@
 package com.exam.student;
 
 import com.tool.Backgroundpanel;
-import com.tool.Data;
+import com.tool.DataTool;
 import com.file.CompareAnswer;
 import com.file.ObtainProblem;
 import org.jb2011.lnf.beautyeye.ch3_button.BEButtonUI;
@@ -13,9 +13,9 @@ import java.awt.event.ActionListener;
 
 public class TopicReply extends JFrame{
 
-    private final Data data = new Data();
+    private final DataTool dataTool = new DataTool();
 
-    private final int length = data.getLength();//选项数量
+    private final int length = dataTool.getLength();//选项数量
     private final Font font = new Font("宋体",Font.PLAIN,30);//字体
     private final JRadioButton[] option = new JRadioButton[length];//选项数组
     private final ImageIcon title = new ImageIcon("img/topicpanel.jpg");//背景图片
@@ -26,13 +26,13 @@ public class TopicReply extends JFrame{
 
     private ButtonGroup optiongroup;//选项按钮组
 
-    private String user;//用户名
+    private String name;//姓名
 
     private JButton last;//上一题
     private JButton next;//下一题
     private JButton ends;//交卷按钮
 
-    private int size = data.getSize();//题目总共数量
+    private int size = dataTool.getSize();//题目总共数量
     private int now = 1;//现在处在的题目
     private int fraction;//分数
 
@@ -47,9 +47,9 @@ public class TopicReply extends JFrame{
 
     public TopicReply(){}
 
-    public TopicReply(String user){
-        this.user = user;
-        this.setTitle(user+"的考试窗口");
+    public TopicReply(String name){
+        this.name = name;
+        this.setTitle(name+"的考试窗口");
         this.setSize(new Dimension(1280,1024));
         this.setLocationRelativeTo(null);//使窗口在中央显示
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -212,7 +212,7 @@ public class TopicReply extends JFrame{
                         option[i].setVisible(false);
                     }
                     fraction = compareAnswer.getFraction();//获取分数
-                    fractionlabel.setText(user+"的分数是"+fraction+"");//写分数
+                    fractionlabel.setText(name+"的分数是"+fraction+"");//写分数
                     fractionlabel.setVisible(true);//显示分数
                 }
                 else{

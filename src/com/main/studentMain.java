@@ -1,6 +1,6 @@
 package com.main;
 
-import com.exam.student.Login;
+import com.exam.student.StudentLogin;
 import org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper;
 
 import javax.swing.*;
@@ -17,6 +17,6 @@ public class studentMain {
         {
             //TODO exception
         }
-        new Login();
+        new StudentLogin();
     }
 }

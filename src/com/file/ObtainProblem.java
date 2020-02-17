@@ -1,6 +1,6 @@
 package com.file;
 
-import com.tool.Data;
+import com.tool.DataTool;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -9,8 +9,8 @@ import java.io.IOException;
 
 public class ObtainProblem {
 
-    private final Data data = new Data();
-    private final int length = data.getLength();
+    private final DataTool dataTool = new DataTool();
+    private final int length = dataTool.getLength();
 
     private BufferedReader output;//读文件
 
@@ -29,7 +29,7 @@ public class ObtainProblem {
     }
 
     public void problem(){
-        this.url = "problem/"+len+".txt";
+        this.url = "Paper/problem/"+len+".txt";
         try {
             output = new BufferedReader(new FileReader(url));
         } catch (FileNotFoundException e) {

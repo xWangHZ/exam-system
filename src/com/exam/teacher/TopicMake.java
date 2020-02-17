@@ -11,7 +11,13 @@ public class TopicMake extends JFrame {
     private final ImageIcon title = new ImageIcon("img/topicmake.png");//背景图片
     private final Backgroundpanel img = new Backgroundpanel(title.getImage(),this);//画出背景图片
 
+//    private JButton[]
+
     private String user;//用户名
+    private String subjects;//科目名称
+
+    private int size = 0;//题目数量
+    private int length  = 4;//题目选项
 
     public TopicMake(){}
 
@@ -24,5 +30,12 @@ public class TopicMake extends JFrame {
         this.setLayout(null);
         img.imgadd(0,0,1280,1024);
         this.setVisible(true);
+    }
+
+    /**
+     * 选择科目
+     */
+    public void showsubjects(){
+
     }
 }

@@ -1,6 +1,6 @@
 package com.file;
 
-import com.tool.Data;
+import com.tool.DataTool;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -9,9 +9,9 @@ import java.io.IOException;
 
 public class CompareAnswer {
 
-    private final Data data = new Data();
+    private final DataTool dataTool = new DataTool();
 
-    private int size = data.getSize();//题目数量
+    private int size = dataTool.getSize();//题目数量
     private int fraction = 0;//分数
     private int[] answer = new int[size];//存放作答答案
 
@@ -20,8 +20,8 @@ public class CompareAnswer {
 
     {
         try {
-            outanswer   = new BufferedReader(new FileReader("answer/answer.txt"));
-            outfraction = new BufferedReader(new FileReader("fraction/fraction.txt"));
+            outanswer   = new BufferedReader(new FileReader("Paper/answer/answer.txt"));
+            outfraction = new BufferedReader(new FileReader("Paper/fraction/fraction.txt"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -30,7 +30,6 @@ public class CompareAnswer {
     public CompareAnswer(){}
 
     public CompareAnswer(int[] answer){
-        System.out.println("123");
         this.answer = answer;
         for(int i = 0;i<size;i++){
             String correctanswer = "";
