@@ -74,6 +74,7 @@ public class TopicReply extends JFrame{
         problem.setFont(font);
 
         problem.setBounds(100,100,800,100);
+
         this.add(problem);
     }
 

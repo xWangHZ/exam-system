@@ -150,7 +150,7 @@ public class StudentLogin extends JFrame{
      */
     public void judge(String user, String pass){
 
-        int flag = linkMySQLTool.Login(user,pass);
+        int flag = linkMySQLTool.studentlogin(user,pass);
 
         switch(flag){
             case 1:{

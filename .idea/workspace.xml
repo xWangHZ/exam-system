@@ -2,47 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4ab7da6-a41e-44a0-a4d2-56316364b294" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paper/problem/size.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.19.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/exam-system.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/MySQL8Link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/SQLTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tool/LinkMySQLTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/exam/teacher/SubjectSelect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/test/ColorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/test/MySQLErrorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/test/TopicMakeMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/test/XYTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer/answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Paper/answer/answer.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/exam-system.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraction/fraction.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Paper/fraction/fraction.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/student/Login$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/student/Login$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/student/Login$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/student/Login$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/student/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/student/TopicReply.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/student/TopicReply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/Login$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/Login$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/Login$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/Login$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/student/StudentLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/student/StudentLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/TeacherLogin$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/TeacherLogin$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/TeacherLogin$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/TeacherLogin$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/TeacherLogin$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/TeacherLogin$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/TeacherLogin$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/TeacherLogin$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/TeacherLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/TeacherLogin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/TopicMake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/exam/teacher/TopicMake.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/file/CompareAnswer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/file/CompareAnswer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/file/ObtainProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/file/ObtainProblem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/main/TeacherMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/main/TeacherMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/main/studentMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/main/studentMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/tool/Data.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Paper/problem/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Paper/problem/2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/exam/student/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exam/student/StudentLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exam-system/com/tool/LinkMySQLTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam-system/com/tool/LinkMySQLTool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/exam/student/StudentLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exam/student/StudentLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/exam/student/TopicReply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exam/student/TopicReply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/exam/teacher/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exam/teacher/TeacherLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/exam/teacher/TeacherLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exam/teacher/TeacherLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/exam/teacher/TopicMake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exam/teacher/TopicMake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/file/CompareAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/file/CompareAnswer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/file/ObtainProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/file/ObtainProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/main/TeacherMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/main/TeacherMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/main/studentMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/main/studentMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tool/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tool/DataTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tool/LinkMySQLTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tool/LinkMySQLTool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +59,7 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="exam-system: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="student: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="java: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -122,7 +100,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -149,9 +127,9 @@
       <recent name="E:\学习使我快乐\GitHub\exam-system\Img" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.studentMain">
-    <configuration name="IMGTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.IMGTest" />
+  <component name="RunManager" selected="Application.TopicMakeMain">
+    <configuration name="ColorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.ColorTest" />
       <module name="exam-system" />
       <extension name="coverage">
         <pattern>
@@ -163,21 +141,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MySQL8Link" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.MySQL8Link" />
-      <module name="exam-system" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SQLTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.SQLTest" />
+    <configuration name="MySQLErrorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.MySQLErrorTest" />
       <module name="exam-system" />
       <extension name="coverage">
         <pattern>
@@ -202,12 +167,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="studentMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.main.studentMain" />
+    <configuration name="TopicMakeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.TopicMakeMain" />
       <module name="exam-system" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.main.*" />
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XYTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.XYTest" />
+      <module name="exam-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -217,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.studentMain" />
-        <item itemvalue="Application.SQLTest" />
-        <item itemvalue="Application.MySQL8Link" />
-        <item itemvalue="Application.IMGTest" />
+        <item itemvalue="Application.TopicMakeMain" />
+        <item itemvalue="Application.XYTest" />
         <item itemvalue="Application.TeacherMain" />
+        <item itemvalue="Application.MySQLErrorTest" />
+        <item itemvalue="Application.ColorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +216,12 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@39d7e2e8" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@3d3ba47a" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@24847827" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -281,6 +264,11 @@
       <workItem from="1581905052629" duration="10000" />
       <workItem from="1581908541766" duration="649000" />
       <workItem from="1581910198397" duration="9592000" />
+      <workItem from="1581984664426" duration="98000" />
+      <workItem from="1582001676872" duration="7595000" />
+      <workItem from="1582099076807" duration="6552000" />
+      <workItem from="1582175467644" duration="599000" />
+      <workItem from="1582184888933" duration="22971000" />
     </task>
     <task id="LOCAL-00001" summary="登陆界面基本完成(密码写在程序中)">
       <created>1580574396305</created>
@@ -312,10 +300,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="111" y="58" key="#SQL_方言/0.0.1536.824@0.0.1536.824" timestamp="1581921738181" />
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581910285051">
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582185220824">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1581910285051" />
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582185220824" />
     <state x="606" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580916956617">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -324,10 +312,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="399" y="99" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1581492091499" />
-    <state x="902" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1581919944811">
+    <state x="902" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1582212576380">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="902" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1581919944811" />
+    <state x="902" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582212576380" />
     <state x="493" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581910843030">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -340,26 +328,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1536.824@0.0.1536.824" timestamp="1581610492764" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1581436257368">
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1582032273256">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581436257368" />
-    <state width="1493" height="271" key="GridCell.Tab.0.bottom" timestamp="1581949959251">
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582032273256" />
+    <state width="1493" height="271" key="GridCell.Tab.0.bottom" timestamp="1582214351432">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581949959251" />
-    <state width="1493" height="271" key="GridCell.Tab.0.center" timestamp="1581949959251">
+    <state width="1493" height="271" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582214351432" />
+    <state width="1493" height="271" key="GridCell.Tab.0.center" timestamp="1582214351432">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581949959251" />
-    <state width="1493" height="271" key="GridCell.Tab.0.left" timestamp="1581949959251">
+    <state width="1493" height="271" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582214351432" />
+    <state width="1493" height="271" key="GridCell.Tab.0.left" timestamp="1582214351432">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581949959251" />
-    <state width="1493" height="271" key="GridCell.Tab.0.right" timestamp="1581949959251">
+    <state width="1493" height="271" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582214351432" />
+    <state width="1493" height="271" key="GridCell.Tab.0.right" timestamp="1582214351432">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581949959251" />
+    <state width="1493" height="271" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582214351432" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1581949959246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -376,41 +364,49 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1581949959246" />
-    <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1581910335842">
+    <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1582104959660">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="212" height="477" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1581910335842" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1581487786736">
+    <state width="212" height="477" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1582104959660" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1582032335960">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581487786736" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582032335960" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1580662728973">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580662728973" />
-    <state x="598" y="251" width="340" height="237" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1581610464121">
+    <state x="598" y="251" width="340" height="237" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1582201095347">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="598" y="251" width="340" height="237" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1581610464121" />
-    <state x="485" y="52" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1581917174344">
+    <state x="598" y="251" width="340" height="237" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1582201095347" />
+    <state x="659" y="299" width="318" height="225" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1582196865287">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="485" y="52" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1581917174344" />
+    <state x="659" y="299" width="318" height="225" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog/0.0.1536.824@0.0.1536.824" timestamp="1582196865287" />
+    <state x="499" y="217" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1582030676849">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="217" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1582030676849" />
+    <state x="485" y="52" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1582200733652">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="485" y="52" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1582200733652" />
     <state x="631" y="150" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1581433706661">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="150" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.824@0.0.1536.824" timestamp="1581433706661" />
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1581910201100">
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1582184910311">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581910201100" />
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582184910311" />
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580662692362">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1580662692362" />
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1581918225258">
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582212133245">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1581918225258" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582212133245" />
   </component>
 </project>

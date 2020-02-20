@@ -2,6 +2,7 @@ package com.exam.teacher;
 
 import com.tool.Backgroundpanel;
 import com.tool.LinkMySQLTool;
+import org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper;
 import org.jb2011.lnf.beautyeye.ch3_button.BEButtonUI;
 
 import javax.swing.*;
@@ -150,13 +151,23 @@ public class TeacherLogin extends JFrame{
      */
     public void judge(String user, String pass){
 
-        int flag = linkMySQLTool.Login(user,pass);
+        int flag = linkMySQLTool.teacherlogin(user,pass);
 
         switch(flag){
             case 1:{
                 JOptionPane.showMessageDialog(null,"登录成功", "我是一个提示框", JOptionPane.PLAIN_MESSAGE);
                 this.setVisible(false);
-                new TopicMake(linkMySQLTool.getStudent_name());
+                BeautyEyeLNFHelper.frameBorderStyle = BeautyEyeLNFHelper.FrameBorderStyle.generalNoTranslucencyShadow;//普通不透明
+                try
+                {
+                    org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper.launchBeautyEyeLNF();
+                    UIManager.put("RootPane.setupButtonVisible", false);//取消设置的显示
+                }
+                catch(Exception e)
+                {
+                    //TODO exception
+                }
+                new SubjectSelect(linkMySQLTool.getTeacher_name());
                 break;
             }
             case 2:{
