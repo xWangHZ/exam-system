@@ -14,6 +14,8 @@ public class LinkMySQLTool {
     private final String newtable = "(id int not null,no int not null,topic varchar(256) not null,A varchar(256) not null,B varchar(256) not null,C varchar(256) not null,D varchar(256) not null,answer varchar(256) not null,score double not null);";
     private final String primary = " primary key (id);";
 
+    private final int N = 1000;
+
     private Connection connection = null;
     private Statement  statement  = null;
     private ResultSet  resultSet  = null;
@@ -26,6 +28,8 @@ public class LinkMySQLTool {
     private String subject_name = null;
 
     private int tableid = 1;
+
+    private Table[] tables = new Table[N];
 
     public LinkMySQLTool(){
         try {
@@ -187,29 +191,116 @@ public class LinkMySQLTool {
     public void createtable(String subject_name){
         this.subject_name = subject_name;
         sql = "create table "+"`"+subject_name+"`"+newtable;
-        System.out.println(sql);
         try {
             statement.executeUpdate(sql);
             sql = "alter table "+"`"+subject_name+"`"+"add constraint "+subject_name+"_primary"+primary;
-            System.out.println(sql);
             statement.executeUpdate(sql);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        tableid = 1;
+        tableid = 0;
     }
 
     /**
      * 将题目信息写入对应科目的数据表
      */
-    public void settopictableadd(int No,String topic,String a,String b,String c,String d,String answer,String score,String tablename){
-        sql = "INSERT INTO "+tablename+" (id, no, topic, A, B, C, D, answer, score) VALUES ("+tableid+","+No+","+oblique+topic+oblique+","+oblique+a+oblique+","+oblique+b+oblique+","+oblique+c+oblique+","+oblique+d+oblique+","+oblique+answer+oblique+","+oblique+score+oblique+")";
+    public void settopictableadd(int No,String topic,String a,String b,String c,String d,String answer,double score,String tablename){
+        sql = "INSERT INTO "+tablename+" (id, no, topic, A, B, C, D, answer, score) VALUES ("+tableid+","+No+","+oblique+topic+oblique+","+oblique+a+oblique+","+oblique+b+oblique+","+oblique+c+oblique+","+oblique+d+oblique+","+oblique+answer+oblique+","+score+")";
+        try {
+            statement.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 判断表中是否有数据
+     * @param tablename
+     * @return
+     */
+    public boolean judgedata(String tablename){
+        sql = "SELECT * FROM "+tablename;
+        try {
+            resultSet =  statement.executeQuery(sql);
+            if(resultSet.next()){
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    /**
+     * 返回题目数量
+     */
+    public int tablelen(String tablename){
+        int len = 0;
+        sql = "SELECT * FROM "+tablename;
+        try {
+            resultSet = statement.executeQuery(sql);
+            while(resultSet.next()){
+                len++;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return len;
+    }
+
+    /**
+     * 返回数据表数据
+     */
+    public Table[] getTables(String tablename){
+        sql = "SELECT * FROM "+tablename;
+        int i = 0;
+        try {
+            resultSet = statement.executeQuery(sql);
+            while(resultSet.next()){
+                tables[i] = new Table();
+                tables[i].setNo(resultSet.getInt("no"));
+                tables[i].setTopic(resultSet.getString("topic"));
+                tables[i].setA(resultSet.getString("A"));
+                tables[i].setB(resultSet.getString("B"));
+                tables[i].setC(resultSet.getString("C"));
+                tables[i].setD(resultSet.getString("D"));
+                tables[i].setAnswer(resultSet.getString("answer"));
+                tables[i].setScore(resultSet.getDouble("score"));
+                i++;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return tables;
+    }
+
+    /**
+     * 修改数据表数据
+     */
+    public void setTable(int No,String topic,String a,String b,String c,String d,String answer,double score,String tablename){
+        sql = "UPDATE "+tablename+" SET no="+No+",topic="+oblique+topic+oblique+",A="+oblique+a+oblique+",B="+oblique+b+oblique+",C="+oblique+c+oblique+",D="+oblique+d+oblique+",answer="+oblique+answer+oblique+",score="+score+" where id="+tableid+";";
         System.out.println(sql);
         try {
             statement.executeUpdate(sql);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        tableid++;
+    }
+
+    /**
+     * 修改id号
+     * @param tableid
+     */
+    public void setTableid(int tableid) {
+        this.tableid = tableid;
+    }
+
+
+    /**
+     * 获取ID号
+     * @return
+     */
+    public int getTableid() {
+        return tableid;
     }
 }

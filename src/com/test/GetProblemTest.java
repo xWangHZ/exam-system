@@ -8,7 +8,7 @@ public class GetProblemTest {
 
 
     public GetProblemTest(){
-        ObtainProblem test = new ObtainProblem(1);
+        ObtainProblem test = new ObtainProblem(1,"java");
         options = new String[4];
 
         problems = test.getProblems();

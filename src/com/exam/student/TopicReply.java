@@ -1,5 +1,6 @@
 package com.exam.student;
 
+import com.server.DataServer;
 import com.tool.Backgroundpanel;
 import com.tool.DataTool;
 import com.file.CompareAnswer;
@@ -13,13 +14,16 @@ import java.awt.event.ActionListener;
 
 public class TopicReply extends JFrame{
 
-    private final DataTool dataTool = new DataTool();
+    private  DataTool dataTool;
 
-    private final int length = dataTool.getLength();//选项数量
+    private int length = 0;//选项数量
+
+
     private final Font font = new Font("宋体",Font.PLAIN,30);//字体
-    private final JRadioButton[] option = new JRadioButton[length];//选项数组
     private final ImageIcon title = new ImageIcon("img/topicpanel.jpg");//背景图片
     private final Backgroundpanel img = new Backgroundpanel(title.getImage(),this);//画出背景图片
+
+    private JRadioButton[] option;//选项数组
 
     private JLabel problem;//问题
     private JLabel fractionlabel;//存放分数
@@ -27,33 +31,42 @@ public class TopicReply extends JFrame{
     private ButtonGroup optiongroup;//选项按钮组
 
     private String name;//姓名
+    private String subname;//科目名称
 
     private JButton last;//上一题
     private JButton next;//下一题
     private JButton ends;//交卷按钮
 
-    private int size = dataTool.getSize();//题目总共数量
+    private int size = 0;//题目总共数量
     private int now = 1;//现在处在的题目
-    private int fraction;//分数
+    private double fraction;//分数
 
-    private ObtainProblem obtainProblem = new ObtainProblem(now);//获取题目与选项类
+    private ObtainProblem obtainProblem;//获取题目与选项类
     private CompareAnswer compareAnswer;//判题类
 
     private String problems;//问题
 
-    private String[] options = new String[length];//选项
+    private String[] options;//选项
 
-    private int[] answer = new int[length];//存放每道题的答案
+    private String[] answer;//存放每道题的答案
 
     public TopicReply(){}
 
-    public TopicReply(String name){
+    public TopicReply(String name,String subname){
         this.name = name;
-        this.setTitle(name+"的考试窗口");
+        this.subname = subname;
+        this.setTitle(name+"同学的"+subname+"考试窗口");
         this.setSize(new Dimension(1280,1024));
         this.setLocationRelativeTo(null);//使窗口在中央显示
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
+        obtainProblem = new ObtainProblem(now,subname);
+        dataTool = new DataTool(subname);
+        size = dataTool.getSize();
+        length = dataTool.getLength();
+        option = new JRadioButton[length];
+        answer = new String[length];
+        options = new String[length];
         problemlabeladd();//添加问题
         JRadioButtonadd();//添加单选按钮
         buttonadd();//添加上下题按钮
@@ -97,7 +110,12 @@ public class TopicReply extends JFrame{
                 public void actionPerformed(ActionEvent e) {
                     for(int i=0;i<length;i++){
                         if(option[i].isSelected()){
-                            answer[now-1] = i+1;//将选中的答案放入数组中
+                            switch (i){
+                                case 0:answer[now-1] = "A";break;
+                                case 1:answer[now-1] = "B";break;
+                                case 2:answer[now-1] = "C";break;
+                                case 3:answer[now-1] = "D";break;
+                            }
                             break;
                         }
                     }
@@ -155,6 +173,13 @@ public class TopicReply extends JFrame{
                     options  = obtainProblem.getOptions();//得到选项
                     for(int i = 0;i<length;i++){
                         option[i].setText(options[i]);
+//                        String a = answer[now];
+//                        switch (a){
+//                            case "A":option[0].isSelected();break;
+//                            case "B":option[1].isSelected();break;
+//                            case "C":option[2].isSelected();break;
+//                            case "D":option[3].isSelected();break;
+//                        }
                     }
                     problem.setText(problems);
                 }
@@ -194,7 +219,7 @@ public class TopicReply extends JFrame{
                 boolean flag = true;
                 //判断是否有为完成题目
                 for(int i = 0;i<size;i++){
-                    if (answer[i]==0){
+                    if (answer[i]==null){
                         flag = false;
                     }
                 }
@@ -204,7 +229,7 @@ public class TopicReply extends JFrame{
                             "我是系统提醒",
                             JOptionPane.ERROR_MESSAGE,
                             new ImageIcon("img/stop.png"));
-                    compareAnswer = new CompareAnswer(answer);
+                    compareAnswer = new CompareAnswer(answer,subname);
                     ends.setVisible(false);
                     next.setVisible(false);
                     last.setVisible(false);
@@ -213,8 +238,10 @@ public class TopicReply extends JFrame{
                         option[i].setVisible(false);
                     }
                     fraction = compareAnswer.getFraction();//获取分数
-                    fractionlabel.setText(name+"的分数是"+fraction+"");//写分数
-                    fractionlabel.setVisible(true);//显示分数
+                    int f = (int)fraction;
+                    fractionlabel.setText(name+"的分数是"+f+"");//写分数
+                    fractionlabel.setVisible(true);//显示分数'
+                    new DataServer(name,f);
                 }
                 else{
                     JOptionPane.showMessageDialog(null,

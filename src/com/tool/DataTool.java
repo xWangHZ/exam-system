@@ -1,9 +1,13 @@
 package com.tool;
 
+import java.io.File;
+
 public class DataTool {
 
     private int length = 4;
-    private int size = 2;
+    private int size = 0;
+
+    private String subname = null;
 
     public int getLength() {
         return length;
@@ -14,6 +18,11 @@ public class DataTool {
     }
 
     public int getSize() {
+        File file = new File("Paper/"+subname+"/problem/");
+        File[] files = file.listFiles();//获取里面的所有文件
+        for(File list:files){
+            size++;
+        }
         return size;
     }
 
@@ -22,4 +31,8 @@ public class DataTool {
     }
 
     public DataTool(){};
+
+    public DataTool(String subname){
+        this.subname = subname;
+    }
 }

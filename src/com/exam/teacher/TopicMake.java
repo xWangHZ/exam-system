@@ -1,7 +1,9 @@
 package com.exam.teacher;
 
+import com.file.GenerateFile;
 import com.tool.Backgroundpanel;
 import com.tool.LinkMySQLTool;
+import com.tool.Table;
 import org.jb2011.lnf.beautyeye.ch3_button.BEButtonUI;
 
 import javax.swing.*;
@@ -15,10 +17,18 @@ public class TopicMake extends JFrame implements FocusListener,ActionListener {
     private final Backgroundpanel img = new Backgroundpanel(title.getImage(),this);//画出背景图片
     private final LinkMySQLTool linkMySQLTool = new LinkMySQLTool();//连接数据库类
 
+    private  GenerateFile generateFile;//将题目写入文件
+
+    private final int N = 1000;
+
     private String name;//姓名
     private String subname;//科目名称
 
-    private int now = 1;//题号
+    private int now = 1;//自动增加题号
+    private int index = 0;//遍历数组时当前数组下标
+    private int len = 0;//题目的总数量
+
+    private int start = 1;//是否是第一次进入
 
     private JButton last;//上一题
     private JButton next;//下一题
@@ -40,6 +50,7 @@ public class TopicMake extends JFrame implements FocusListener,ActionListener {
     private JScrollPane cpane;//滚动c选项
     private JScrollPane dpane;//滚动c选项
 
+    private Table[] tables = new Table[N];//题目数组
 
     public TopicMake(){}
 
@@ -51,9 +62,11 @@ public class TopicMake extends JFrame implements FocusListener,ActionListener {
         this.setLocationRelativeTo(null);//使窗口在中央显示
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
+        len = linkMySQLTool.tablelen(subname);
         buttonadd();
         textfieldadd();
         textadd();
+        judgedata();
         img.imgadd(0,0,1280,1024);
         this.setVisible(true);
     }
@@ -67,6 +80,8 @@ public class TopicMake extends JFrame implements FocusListener,ActionListener {
         ends = new JButton("完成");
 
         next.addActionListener(this);
+        last.addActionListener(this);
+        ends.addActionListener(this);
 
         ends.setUI(new BEButtonUI().setNormalColor(BEButtonUI.NormalColor.red));
 
@@ -88,9 +103,9 @@ public class TopicMake extends JFrame implements FocusListener,ActionListener {
      */
     public void textfieldadd(){
 
-        No = new JTextField("题号:");
-        score = new JTextField("分值:");
-        answer = new JTextField("答案:");
+        No = new JTextField();
+        score = new JTextField();
+        answer = new JTextField();
 
         No.setFont(font);
         score.setFont(font);
@@ -113,11 +128,11 @@ public class TopicMake extends JFrame implements FocusListener,ActionListener {
      * 添加五个文本栏
      */
     public void textadd(){
-        topic = new JTextArea("题目:");
-        a = new JTextArea("选项A:");
-        b = new JTextArea("选项B:");
-        c = new JTextArea("选项C:");
-        d = new JTextArea("选项D:");
+        topic = new JTextArea();
+        a = new JTextArea();
+        b = new JTextArea();
+        c = new JTextArea();
+        d = new JTextArea();
         topicpane = new JScrollPane(topic);
         apane = new JScrollPane(a);
         bpane = new JScrollPane(b);
@@ -266,10 +281,160 @@ public class TopicMake extends JFrame implements FocusListener,ActionListener {
      */
     @Override
     public void actionPerformed(ActionEvent e) {
+
+        //下一题
         if(e.getSource()==next){
-            linkMySQLTool.settopictableadd(Integer.parseInt(No.getText()),topic.getText(),a.getText(),b.getText(),c.getText(),d.getText(),answer.getText(),score.getText(),subname);
+            index++;
+            int id = linkMySQLTool.getTableid();
+            System.out.println("这次的id是"+id);
+            if(index>len){
+                if(!inputerror()){
+                    JOptionPane.showMessageDialog(null,
+                            "请输入数据",
+                            "我是系统提醒",
+                            JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+                linkMySQLTool.settopictableadd(Integer.parseInt(No.getText()),topic.getText(),a.getText(),b.getText(),c.getText(),d.getText(),answer.getText(),Double.parseDouble(score.getText()),subname);
+            }
+            else{
+                if(!inputerror()){
+                    JOptionPane.showMessageDialog(null,
+                            "请输入数据",
+                            "我是系统提醒",
+                            JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+                linkMySQLTool.setTable(Integer.parseInt(No.getText()),topic.getText(),a.getText(),b.getText(),c.getText(),d.getText(),answer.getText(),Double.parseDouble(score.getText()),subname);
+            }
+            id++;
+            linkMySQLTool.setTableid(id);
+            System.out.println("点击下一题,下次的id是"+id);
             now++;
+            judgedata();
+        }
+
+        //上一题
+        if(e.getSource()==last){
+            int id = linkMySQLTool.getTableid();
+            System.out.println("这次的id是"+id);
+            if(id==1){
+                JOptionPane.showMessageDialog(null,
+                        "已经没有了呢",
+                        "我是系统提醒",
+                        JOptionPane.ERROR_MESSAGE,
+                        new ImageIcon("img/stop.png"));
+                return;
+            }
+            index--;
+            if(index>len){
+                if(!inputerror()){
+                        JOptionPane.showMessageDialog(null,
+                                "请输入数据",
+                                "我是系统提醒",
+                                JOptionPane.ERROR_MESSAGE);
+                        return;
+                }
+                linkMySQLTool.settopictableadd(Integer.parseInt(No.getText()),topic.getText(),a.getText(),b.getText(),c.getText(),d.getText(),answer.getText(),Double.parseDouble(score.getText()),subname);
+            }
+            else{
+                if(!inputerror()){
+                    JOptionPane.showMessageDialog(null,
+                            "请输入数据",
+                            "我是系统提醒",
+                            JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+                linkMySQLTool.setTable(Integer.parseInt(No.getText()),topic.getText(),a.getText(),b.getText(),c.getText(),d.getText(),answer.getText(),Double.parseDouble(score.getText()),subname);
+            }
+            id--;
+            linkMySQLTool.setTableid(id);
+            System.out.println("点击上一题,下次的id是"+id);
+            now--;
+            judgedata();
+        }
+
+        //完成
+        if(e.getSource()==ends){
+            generateFile = new GenerateFile(subname);
+            JOptionPane.showMessageDialog(null,
+                    "数据保存好了哦",
+                    "我是系统提醒",
+                    JOptionPane.PLAIN_MESSAGE);
+            System.exit(0);
+        }
+    }
+
+    /**
+     * 根据表中是否有数据来判断
+     */
+    public void judgedata(){
+        boolean flag = linkMySQLTool.judgedata(subname);
+        if(index>=len)  flag = false;
+        if(flag){
+            truedata();
+        }
+        else{
+            if(start==0){
+                int s = JOptionPane.showConfirmDialog(this,"已经没有出好的题了,是否继续添加","我是系统消息",JOptionPane.YES_NO_CANCEL_OPTION);
+                start = 0;
+                if(s==JOptionPane.YES_OPTION){
+                    falsedata();
+                }
+                else{
+                    return;
+                }
+            }
+            falsedata();
+        }
+    }
+
+    /**
+     * 数据表中有数据时
+     */
+    public void truedata(){
+        tables = linkMySQLTool.getTables(subname);
+        No.setText(tables[index].getNo()+"");
+        score.setText(tables[index].getScore()+"");
+        answer.setText(tables[index].getAnswer());
+        topic.setText(tables[index].getTopic());
+        a.setText(tables[index].getA());
+        b.setText(tables[index].getB());
+        c.setText(tables[index].getC());
+        d.setText(tables[index].getD());
+    }
+    /**
+     * 数据表中没有数据时
+     */
+    public void falsedata(){
+
+        if(now==1){
+            No.setText("题号:");
+        }
+        else{
             No.setText(now+"");
         }
+        score.setText("分值:");
+        answer.setText("答案:");
+        a.setText("选项A:");
+        b.setText("选项B:");
+        c.setText("选项C:");
+        d.setText("选项D:");
+        topic.setText("题目:");
+    }
+
+    /**
+     * 没有输入数据时
+     */
+    public boolean inputerror(){
+        if(No.getText().equals("题号:"))  return false;
+        if(score.getText().equals("分值:"))   return false;
+        if(answer.getText().equals("答案:"))  return false;
+        if(topic.getText().equals("题目:"))   return false;
+        if(a.getText().equals("选项A:"))  return false;
+        if(b.getText().equals("选项B:"))  return false;
+        if(c.getText().equals("选项C:"))  return false;
+        if(d.getText().equals("选项D:"))  return false;
+        return true;
     }
 }

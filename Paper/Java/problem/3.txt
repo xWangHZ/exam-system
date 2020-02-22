@@ -1,0 +1,5 @@
+为一个boolean类型变量赋值时，可以使用()方式
+boolean = 1
+boolean a = (9>=10)
+boolean a = "真"
+不同类型的变量，可以用相同的名字

@@ -16,20 +16,24 @@ public class ObtainProblem {
 
     private String url;//文件路径
     private String problems;//问题
+    private String subname;//科目
 
     private String[] options = new String[length];//选项
 
     private int len = 0;
 
+    private int No = 0;
+
     public ObtainProblem(){}
 
-    public ObtainProblem(int len){
+    public ObtainProblem(int len,String subname){
         this.len = len;
+        this.subname = subname;
         problem();
     }
 
     public void problem(){
-        this.url = "Paper/problem/"+len+".txt";
+        this.url = "Paper/"+this.subname+"/problem/"+len+".txt";
         try {
             output = new BufferedReader(new FileReader(url));
         } catch (FileNotFoundException e) {

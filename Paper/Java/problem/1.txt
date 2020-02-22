@@ -1,0 +1,5 @@
+下列说法中，错误的是()
+main方法必须是static的
+程序从main开始执行
+一个类可以有多个main
+main必须是void

@@ -1,7 +1,9 @@
 package com.exam.student;
 
+import com.exam.student.SubjectSelect;
 import com.tool.Backgroundpanel;
 import com.tool.LinkMySQLTool;
+import org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper;
 import org.jb2011.lnf.beautyeye.ch3_button.BEButtonUI;
 
 import javax.swing.*;
@@ -156,7 +158,17 @@ public class StudentLogin extends JFrame{
             case 1:{
                 JOptionPane.showMessageDialog(null,"登录成功", "我是一个提示框", JOptionPane.PLAIN_MESSAGE);
                 this.setVisible(false);
-                new TopicReply(linkMySQLTool.getStudent_name());
+                BeautyEyeLNFHelper.frameBorderStyle = BeautyEyeLNFHelper.FrameBorderStyle.generalNoTranslucencyShadow;//普通不透明
+                try
+                {
+                    org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper.launchBeautyEyeLNF();
+                    UIManager.put("RootPane.setupButtonVisible", false);//取消设置的显示
+                }
+                catch(Exception e)
+                {
+                    //TODO exception
+                }
+                new SubjectSelect(linkMySQLTool.getStudent_name());
                 break;
             }
             case 2:{
