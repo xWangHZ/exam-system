@@ -37,9 +37,9 @@
         │       ├── TeacherLogin.java	//教师登录窗口类
         │       └── TopicMake.java		//教师出题窗口类
         ├── file	//文件操作包
-        │   ├── CompareAnswer.java		//
-        │   ├── GenerateFile.java
-        │   └── ObtainProblem.java
+        │   ├── CompareAnswer.java		//与本地答案比较类
+        │   ├── GenerateFile.java		//创建本地文件类
+        │   └── ObtainProblem.java		//获得问题类
         ├── main	//主类包
         │   ├── ServerMain.java			//服务端主类
         │   ├── studentMain.java		//学生端主类
@@ -81,9 +81,9 @@
 
 ## 项目截图
 
-![](E:\学习\GitHub\exam-system\img\blog\QQ截图20200222221223.jpg)
+![](img\blog\QQ截图20200222221223.jpg)
 
-![](E:\学习\GitHub\exam-system\img\blog\QQ截图20200222221255.jpg)
+![](img\blog\QQ截图20200222221255.jpg)
 
-![](E:\学习\GitHub\exam-system\img\blog\QQ截图20200222221411.jpg)
+![](img\blog\QQ截图20200222221411.jpg)
 
