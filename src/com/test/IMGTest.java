@@ -21,7 +21,7 @@ public class IMGTest extends JFrame {
         //不采用任何布局方式。
         this.setLayout(null);
 
-        bgp = new Backgroundpanel((new ImageIcon("Img/title.jpg")).getImage());
+        bgp = new Backgroundpanel((new ImageIcon("img/title.jpg")).getImage());
         bgp.setBounds(0, 0, 800, 600);
 
         //创建按钮
